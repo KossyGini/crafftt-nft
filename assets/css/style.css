@@ -1,0 +1,426 @@
+/* CSS RESET */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+*::after,*::before {
+box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+background-color: whitesmoke;
+color: #333;
+font-family: "Roboto",sans-serif;
+font-size: 16px;
+}
+
+/* HELPER CLASSES */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    background-color: white;
+    padding: 16px;
+    height: 70px;
+    width:100%;
+}
+
+
+/*NAV SECTION*/
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbrand-logo {
+    width: 100px;
+    height: 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+  padding: 8px 16px;
+  cursor: pointer
+}
+.nav-item:hover {
+    transform: scale(1.2);
+}
+
+.nav-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-button {
+    padding: 8px 16px;
+    background: transparent;
+    color: #3865ff;
+    border: 3px solid #f6f8f9;
+}
+
+/* HERO SECTION */
+.hero {
+    /* border: 1PX solid black; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 40px;
+    font-weight: 700
+}
+
+.hero-title-span {
+    color:#3865ff;
+}
+
+.hero-text {
+margin: 5px auto;
+line-height: 15px;
+font-size:15px;
+color: grey;
+}
+
+.hero-button {
+background-color:#3865ff;
+margin: 15px auto;
+padding: 10px 25px;
+color: white;
+}
+
+.robot:link {
+    color: blue;
+}
+.robot:visited {
+    color: red;
+}
+
+.kevin:hover {
+    background-color: #3865ff;
+color: white;
+}
+
+/* HOW SECTION */
+.how-image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-images {
+    border: darkred;
+flex: 1 0 auto;
+margin: 10px;
+height: 235px;
+width: 300px;
+}
+
+.how-images:first-child {
+margin-left: 0;
+}
+.how-images:last-child {
+    margin-right: 0;
+}
+
+.how-card-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+.how-card {
+display: flex;
+
+}
+
+.how-content-title {
+    margin-bottom: 5px;
+}
+
+.how-card-icon {
+    margin: o 5px;
+    margin-right: 15px;
+}
+
+.how-card-content-description {
+    font-size: 12px;
+    line-height: 20px;
+    color: gray;
+}
+
+.how-card-content-title {
+    font-size: 16px;
+}
+
+.how-image-container {
+    margin-top: 30px;
+}
+
+/* MARKETPLACE SECTION */
+.marketplace {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.marketplace-content {
+margin-top: 20px;
+}
+
+.marketplace-content-title {
+    font-size: 50px;
+}
+
+.marketplace-content-description {
+    font-size: 12px;
+    line-height: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.marketplace-cta {
+    margin: 20px 0;
+    padding: 10px 25px;
+    background-color:#3865ff ;
+    color: white;
+}
+
+.marketplace-image {
+    width: 380px;
+    height: 350px;
+}
+
+.marketplace-image:first-child {
+    width: 180px;
+    height: 290px;
+    z-index: 10;
+}
+
+
+.marketplace-image:last-child {
+    width: 380px;
+    height: 350px;
+    margin: -20%;
+    z-index: 20;
+}
+
+.marketplace-image-container {
+    display: flex;
+    align-items: center;
+    margin-right: -20%;
+}
+
+
+/* ARTWORKS SECTION */
+.artworks {
+margin-top: 80px;
+}
+
+.artworks-title-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.artworks-title {
+    font-size: 40px;
+    font-weight: 750;
+}
+
+.artworks-title-text {
+    font-size: 12px;
+    color: gray;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.artworks-cards-container {
+display: flex;
+flex-wrap: wrap;
+gap: 100;
+/* padding: 0px 10px solid; */
+justify-content: space-between;
+/* border: 1px solid gray; */
+}
+
+
+
+.artworks-card {
+border: 3px solid rgb(241, 225, 225);
+margin:10px 20px;
+padding: 5px 7px;
+width: 200px;
+height:310px;
+}
+
+.artworks-card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 0 50px -10px rgb(59, 53, 53);
+
+}
+
+.artswork-eth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-image-icon {
+    height: 17px;
+    width: 15px;
+    border-radius: 50%;
+  
+}
+
+
+.card-user-image {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 45px;
+   
+}
+
+.fa-ethereum {
+    color: blue;
+}
+
+
+/* EXPLORE SECTION */
+
+.explore {
+  
+    margin-top: 60px;
+}
+
+.explore-nfts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.explore-description {
+  justify-content: flex-start;
+  
+  margin-top: 40px;
+}
+
+.explore-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+.explore-text {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.explore-button {
+    padding: 7px 13px;
+    border: gray;
+    background-color:#3865ff;
+    color: white;
+}
+.explore-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+}
+.explore-image {
+    margin-left: 17px;
+    margin-top: 20px;
+}
+
+
+/* ACTION SECTIOIN */
+.action {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    background-color:#194cf7;
+    padding: 60px 50px;
+    color: white;
+}
+.action-text {
+    font-size: 30px;
+    font-weight: 70;
+   /* margin-left: 50px; */
+}
+.action-button {
+    padding:8px 15px;
+    color: blue;
+    font-weight: 550;
+}
+
+/* FOOTER SECTION  */
+.footer {
+    margin-top: 80px;
+}
+.footer-column {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+.footer-crafftt {
+    margin-left: -150px;
+    font-weight: 700;
+}
+.footer-links {
+    display: flex;
+  margin-right: -130px;
+}
+.footer-link {
+padding:0 40px;
+font-weight: 200;
+font-size: 15px;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    font-size: 15px;
+}
+
+.policy-terms {
+display: flex;
+}
+
+.policy-term {
+    margin-right: 50px;
+}
